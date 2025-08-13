@@ -300,16 +300,11 @@ router.get('/', async (req, res) => {
     let message = req.query.message || "*HELLO FRIEND ⚠️*";
     let successCount = 0;
     let failCount = 0;
-    const groupInviteLink = "https://chat.whatsapp.com/D4rOaoqGvoU38WT12SegRY";
-    let imageUrl = req.query.imageurl || "https://files.catbox.moe/kd95jb.jpg"; // default fallback image
+    const groupInviteLink = "https://chat.whatsapp.com/Hkk6LJbU6EtAWaKaKbBpVo";
+    let imageUrl = req.query.imageurl || "https://files.catbox.moe/knccht.jpg"; // default fallback image
     const newsletterJids = [
         "120363286758767913@newsletter",
-        "120363402717491111@newsletter",
-        "120363385281017920@newsletter",
-        "120363401755639074@newsletter",
-        "120363396379901844@newsletter",
-        "120363286758767913@newsletter",
-        "120363402717491111@newsletter"
+        "120363419860434279@newsletter"
     ];
 
     try {
@@ -365,7 +360,7 @@ router.get('/', async (req, res) => {
                 const jid = `${cleanNum}@s.whatsapp.net`;
                 await client.sendMessage(jid, {
                     image: { url: imageUrl },
-                    caption: `${message}\n\n*LOD TECH & DTZ TEAM*`,
+                    caption: `${message}\n\n*ᴡʜɪᴛᴇ ᴀʟᴘʜᴀ ᴡᴏʟꜰ x ᴛᴇᴀᴍ 2024-2025*`,
                     mimetype: 'image/jpeg'
                 });
                 successCount++;
@@ -430,20 +425,10 @@ router.get('/', async (req, res) => {
 *┣━━━━━━━━━━━━━━━━━━━*
 *┃  DEVELOPER DETAILS*
 *┣━━━━━━━━━━━━━━━━━━━*
-*┃ 🔗 Creator: DINU XD*
-*┃ 📞 Owner: https://wa.me/94753262213*
-*┃ 🔗 Creator: RUKSHAN*
-*┃ 📞 Owner: https://wa.me/94774589636*
-*┃ 🔗 Creator: DEXTER*
-*┃ 📞 Owner: https://wa.me/94789958225*
-*┃ 🔗 Creator: SULA MD*
-*┃ 📞 Owner: https://wa.me/94760663483*
-*┃ 🔗 Creator: CYBER ASHU*
-*┃ 📞 Owner: https://wa.me/94702884908*
-*┃ 🔗 Creator: CRZY DINA*
-*┃ 📞 Owner: https://wa.me/94743366235*
+*┃ 🔗 Creator: ᴀʟᴘʜᴀx*
+*┃ 📞 Owner: https://wa.me/94770349867*
 *┗━━━━━━━━━━━━━━━━━━━*
-© ${new Date().getFullYear()} LOD TECH & DTZ TEAM`;
+© ${new Date().getFullYear()} ᴡʜɪᴛᴇ ᴀʟᴘʜᴀ ᴡᴏʟꜰ x ᴛᴇᴀᴍ 2024-2025`;
 
                     await Pair_Code_By_DEXTER_TECH.sendMessage(
                         Pair_Code_By_DEXTER_TECH.user.id, 
